@@ -6,7 +6,7 @@ export const FilterForm = ({ onFilter }) => {
 
    useEffect(() => {
       onFilter(filterText);
-   }, [filterText]);
+   }, [filterText, onFilter]);
 
    function onFilterInput(event) {
       setFilterText(event.target.value);
