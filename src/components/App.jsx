@@ -13,7 +13,7 @@ export const App = () => {
 
    useEffect(() => {
       localStorage.setItem('saved-contact-list', JSON.stringify(contacts));
-   }, [contacts.length]);
+   }, [contacts.length, contacts]);
 
    function onFormSubmit(data) {
       if (contactCheck(data.name)) {
